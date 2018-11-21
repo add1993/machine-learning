@@ -407,12 +407,6 @@ def confusion_matrix(true, predicted):
     return matrix
 
 def visualize(tree, depth=0):
-    """
-    Pretty prints (kinda ugly, but hey, it's better than nothing) the decision tree to the console. Use print(tree) to
-    print the raw nested dictionary representation.
-    DO NOT MODIFY THIS FUNCTION!
-    """
-
     if depth == 0:
         print('TREE')
 
@@ -444,10 +438,6 @@ def predict_example_boosting(x, Hypothesis):
         return 0
     
 if __name__ == '__main__':
-    #
-    # Below is an example of how a decision tree can be trained and tested on a data set in the folder './data/'. Modify
-    # this function appropriately to answer various questions from the Programming Assignment.
-    #
 
     # Load a data set
     data = DataSet('mushroom')
