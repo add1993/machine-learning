@@ -96,7 +96,6 @@ def balanced_sample_maker(X, y, sample_size, random_seed = 42):
     width = 0.5
 
     return data_train,labels_train
-
 	
 """
     # For directly using torch dataset for MNIST
@@ -168,7 +167,6 @@ if __name__ == "__main__":
     test_err = 0.0
     correct_samples = list(0.0 for i in range(10))
     total_samples = list(0.0 for i in range(10))
-
     model.eval()
 
     for data, target in test_loader:
