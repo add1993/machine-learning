@@ -10,3 +10,15 @@ Boostrap aggregation or Bagging helps in reducing variance by averaging differen
 2. Next, we will learn a model on the randomly sampled data.
 3. We will repeat the above method of random sampling and creating a model M times.
 4. For making a prediction we can take majority voting. Let's assume we have 10 models and 7 models return a true value on a given example then we will return true by majority voting.
+
+# Boosting (AdaBoost)
+In boosting we use weak learners (accuracy > 0.5, high bias) to reduce both bias and variance. It is an iterative algorithm that increases weights on misclassified examples so more focus is on the misclassified examples. 
+
+##### Algorithm (Pseudocode)
+    Set uniform example weights
+    for Each base learner do
+      Train base learner with weighted sample.
+      Test base learner on all data.
+      Set learner weight with weighted error.
+      Set example weights based on ensemble predictions.
+    end for
