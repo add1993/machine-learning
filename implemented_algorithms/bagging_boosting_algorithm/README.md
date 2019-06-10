@@ -22,3 +22,6 @@ In boosting we use weak learners (accuracy > 0.5, high bias) to reduce both bias
       Set learner weight with weighted error.
       Set example weights based on ensemble predictions.
     end for
+
+# Dataset
+Mushroom dataset is provided in the data folder. Use the UCI repository to get other datasets and make the required changes in the `load_file` function.
