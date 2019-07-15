@@ -1,7 +1,7 @@
 
 
 # Machine-Learning
-This repository contains machine learning algorithms, some implemented from scratch and some using scikit learn. 
+This repository contains python programs for machine learning algorithms, some implemented from scratch and some using scikit learn. 
 
 ## Implemented Machine Learning Algorithms 
 1. [Linear Regression](https://github.com/add1993/machine-learning/tree/master/implemented_algorithms/linear_regression)
