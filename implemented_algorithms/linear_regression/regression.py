@@ -17,8 +17,6 @@ def train_model(phi, y):
 
 def test_model(w, phi, y_true):
     y_pred = phi @ w
-    #print("y_pred")
-    #print(y_pred)
     return np.mean((y_true - y_pred)**2)
 
 n = 200
@@ -33,7 +31,6 @@ plt.xlabel('x-axis')
 plt.ylabel('y-axis')
 plt.title('1. b. Dataset vs True function')
 plt.show()
-#exit()
 
 dataset = x
 indices = np.random.permutation(dataset.shape[0])
@@ -49,14 +46,12 @@ plt.xlabel('x-axis');
 plt.ylabel('y-axis');
 plt.title('1. c. Training Data')
 plt.show()
-#plt.gcf().clear()
+
 plt.plot(x_tst, y_tst, marker ='o', markerfacecolor ='r', markeredgecolor ='k', linestyle ='none')
 plt.xlabel('x-axis');
 plt.ylabel('y-axis');
 plt.title('1. c. Test Data')
 plt.show()
-#exit()
-
 
 plt.gcf().clear()
 plt.xlabel('x_tst');
@@ -64,7 +59,6 @@ plt.ylabel('y_pred / y_tst');
 
 colors = "bcmybcmybcmy"
 color_index = 0
-#plt.gcf().clear()
 
 e_mse_tst = []
 e_mse_trn = []
@@ -94,7 +88,3 @@ for d in range (5, 16):                  #Iterate over poly. order
     print("mean sqaured error for "+str(d)+" = "+str(e_mse))
     color_index += 1
     plt.show()
-
-#plt.plot(deg, e_mse_tst, marker ='*', markerfacecolor ='g', markeredgecolor ='g', linestyle='none', color ="g", markersize=6)
-#plt.plot(deg, e_mse_trn, marker ='o', markerfacecolor ='r', markeredgecolor ='r', linestyle='none', color ="r", markersize=6)
-#
