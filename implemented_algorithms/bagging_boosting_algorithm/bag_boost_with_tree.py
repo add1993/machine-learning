@@ -107,7 +107,6 @@ def id3(x, y, attributes, max_depth, depth=0):
 def entropy(y, weight=None):
     """
     Computing the entropy of given labels
-    
     """
     if weight is None:
         weight = np.ones((len(y), 1), dtype=int)
@@ -239,7 +238,6 @@ def bagging(x, y, max_depth, num_trees):
 def boosting(x, y, max_depth, num_stumps):
     """
     This is implementation of boosting algorithm. We will learn the stumps and calculate hypothesis weights
-        
     """
     treeList = [None] * num_stumps
     alpha = [0] * num_stumps
