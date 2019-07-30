@@ -17,13 +17,13 @@ def trainM_NB(num_spamdocs, num_hamdocs, train_spamVocab, train_hamVocab):
     all_spam_dict = Counter(train_spamVocab)                    #spam dictionary from all spam docs in training data, contains "word:count"
     all_ham_dict = Counter(train_hamVocab)
     
-    numWords_spam = len(train_spamVocab)                         # total num of words in all spam docs
+    numWords_spam = len(train_spamVocab)                       # total num of words in all spam docs
     numWords_ham = len(train_hamVocab)
     
     all_distinctWords = list(set(all_spam_dict)|set(all_ham_dict))          #set contains only set of distinct words, counts removed. | = join
     num_distinctWords = len(all_distinctWords)
     
-    condprob_spam = {}                                          # dictionary to hold conditional probability for words in spam files
+    condprob_spam = {}                            # dictionary to hold conditional probability for words in spam files
     condprob_ham = {}
 
     for term in all_distinctWords:
