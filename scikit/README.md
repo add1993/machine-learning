@@ -1,5 +1,7 @@
 
 ## Maching Learning using Libaries - Scikit Learn
+Algorithms implemented using scikit learn
+
 1. [Bagging and Boosting using scikit](https://github.com/add1993/machine-learning/tree/master/scikit/bagging_boosting)
 2. [Decision Trees using scikit](https://github.com/add1993/machine-learning/tree/master/scikit/decision_tree)
 3. [SVM using scikit](https://github.com/add1993/machine-learning/tree/master/scikit/svm)
